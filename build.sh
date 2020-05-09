@@ -1,5 +1,5 @@
 #!/bin/bash
 
 
-docker build -t myjenkins .
+docker build -t jenkins_lts .
 

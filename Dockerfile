@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:2.112
+FROM jenkins/jenkins:lts
 LABEL maintainer=”arturobernalg@gmail.com
 
 
