@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:lts
+FROM jenkins/jenkins
 LABEL maintainer=”arturobernalg@gmail.com
 
 
@@ -11,5 +11,3 @@ USER jenkins
 
 ENV JAVA_OPTS="-Xmx8192m"
 ENV JENKINS_OPTS="--handlerCountMax=300 --logfile=/var/log/jenkins/jenkins.log --webroot=/var/cache/jenkins/war"
-
-
