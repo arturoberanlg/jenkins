@@ -4,21 +4,34 @@
 ![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/arturobernalg/jenkins)
 ![Docker Pulls](https://img.shields.io/docker/pulls/arturobernalg/jenkins)
 
-# jenkins
+## jenkins
 
 
 This is a fully functional docker Jenkins server, based on the weekly and LTS releases .
 
 
 
-# build
+## build
 
 ```shell
 $ ./build.sh
 ```
 
-# run
+## run
 
 ```shell
 $ ./run.sh 
 ```
+
+## Logs
+
+```shell
+$ docker exec jenkins_lts tail -f /var/log/jenkins/jenkins.log
+```
+##
+
+```shell
+$ docker volume create jenkins-data
+$ docker volume create jenkins-log
+```
+
